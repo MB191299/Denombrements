@@ -8,21 +8,24 @@ namespace Denombrements
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int c = 1;
-            while (c != 0)
+            int choix = 1;
+            while (choix != 0)
             {
                 Console.WriteLine("Permutation ...................... 1");
                 Console.WriteLine("Arrangement ...................... 2");
                 Console.WriteLine("Combinaison ...................... 3");
                 Console.WriteLine("Quitter .......................... 0");
                 Console.Write("Choix :                            ");
-                c = int.Parse(Console.ReadLine());
+                choix = int.Parse(Console.ReadLine());
 
-                if (c == 0) { Environment.Exit(0); }
+                if (choix == 0) 
+                { 
+                    Environment.Exit(0); 
+                }
 
-                if (c == 1)
+                if (choix == 1)
                 {
                     Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
                     int n = int.Parse(Console.ReadLine()); // saisir le nombre
@@ -34,7 +37,7 @@ namespace Denombrements
                 }
                 else
                 {
-                    if (c == 2)
+                    if (choix == 2)
                     {
                         Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
                         int t = int.Parse(Console.ReadLine()); // saisir le nombre
